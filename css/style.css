@@ -1,0 +1,165 @@
+header, main, {
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+}
+header{
+    width: 100%;
+    background-color: grey;
+    justify-content: space-around;
+    height: 48px;
+    align-items: center;
+    display: flex;
+}
+.social{
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.search{
+    padding: 8px;
+    border: solid 1px white;
+    background-color: grey;
+    height: 24px;
+    display: flex;
+}
+.search_box input[type=text]{
+    border:none;
+    background-color: grey;
+}
+input::-webkit-input-placeholder{ 
+    color: white; 
+}
+input::-moz-placeholder{ 
+    color: white; 
+}
+.search_box{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+    width: 80%;
+    margin: 48px auto 0px auto;
+}
+.news{
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+}
+.news_box{
+    width: 33%;
+    padding: 8px;
+}
+.news img{
+    width: 360px;
+    height: 220px;
+}
+.flex{
+    display: flex;
+}
+.four_blocks{
+    flex-wrap: wrap;
+    width: 50%;
+}
+.block{
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.four_blocks > :last-child{
+    background-color: grey;
+}
+.orange{
+    width: 33%;
+}
+.about_us_box{
+    width: 77%;
+    box-sizing: border-box;
+    padding:8px; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.text{
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.h3_margin{
+    margin-left: 16px;
+}
+.adress{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
+}
+.map{
+    width: 50%;
+}
+.purp{
+    color:blueviolet;
+    font-size: 32px;
+    font-weight: bold;
+}
+.lead_blocks{
+    justify-content: space-between;
+}
+.lead_block{
+    width: 33%;
+    box-sizing: border-box;
+    padding: 0px 24px 12px 24px;
+}
+.shadow{
+    box-shadow: 1px 1px 4px grey
+}
+a{
+    text-decoration: none;
+}
+button{
+    width: 120px;
+    padding:12px;
+    background-color: blueviolet;
+}
+.contact_us{
+    width: 50%;
+    margin: 24px auto;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+}
+.contact_us input[type=text], textarea ,input[type=email]{
+    border:none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-bottom: 3px solid #ccc;
+    outline: none;
+}
+
+
+.contact_us button{
+    width: 100px;
+    padding:12px;
+    border: solid black 2px;
+    margin-top: 12px;
+}
+
+.contact_us ::placeholder{
+    color: grey;
+}
+
+input:invalid{
+    border-bottom: 3px solid red;
+}
