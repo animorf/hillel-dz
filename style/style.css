@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*  Обнуление стилей by Stas Bagretsov */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
+  width: 87.5%;
+  margin: 0px 8px;
+  padding: 8px;
+  background-color: grey;
+}
+
+aside {
+  width: 12.5%;
+  background-color: bisque;
+  height: 400px;
+}
+
+.photo-preview {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 57.14%;
+  height: 42%;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 10px;
+  left: 10px;
+  margin: 0px 8px;
+}
+
+nav {
+  width: 10%;
+  background-color: lightgreen;
+  height: 400px;
+  margin: 0px 8px;
+  max-width: 40px;
+}
+
+nav .mini-k li {
+  margin-bottom: 4px;
+}
+
+nav .mini-k li img {
+  border: solid 1px black;
+}
+
+nav .mini-k li img:hover {
+  -webkit-box-shadow: 0px 0px 3px 4px #ffa34d;
+  box-shadow: 0px 0px 3px 4px #ffa34d;
+}
+
+.mini-fs {
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.big-kboard-review {
+  width: 88%;
+  background-color: hotpink;
+  height: 400px;
+  margin: 0px 8px;
+}
+
+.full-description {
+  width: 42.86%;
+  background-color: blue;
+  height: 1600px;
+  margin: 0px 8px;
+}
+
+.fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fl-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fl-r-wr {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fl-c-wr {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=style.css.map */

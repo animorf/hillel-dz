@@ -1,0 +1,96 @@
+@import "nullstyle.scss";
+$m: 0px 8px;
+$p: 8px;
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+main {
+    width: 87.5%;
+    margin: $m;
+    padding: $p;
+    background-color: grey;
+}
+
+aside {
+    width: 12.5%;
+    background-color: bisque;
+    height: 400px;
+}
+
+.photo-preview {
+    position: sticky;
+    width: 57.14%;
+    height: 42%;
+    background-color: aqua;
+    display: flex;
+    top: 10px;
+    left: 10px;
+    margin: $m;
+}
+
+nav {
+    width: 10%;
+    background-color: lightgreen;
+    height: 400px;
+    margin: $m;
+    max-width: 40px;
+
+    .mini-k li {
+        margin-bottom: 4px;
+
+        img {
+            border: solid 1px black;
+
+            &:hover {
+                -webkit-box-shadow: 0px 0px 3px 4px #ffa34d;
+                -moz-box-shadow: 0px 0px 3px 4px #ffa34d;
+                box-shadow: 0px 0px 3px 4px #ffa34d;
+            }
+        }
+    }
+}
+
+.mini-fs {
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.big-kboard-review {
+    width: 88%;
+    background-color: hotpink;
+    height: 400px;
+    margin: $m;
+}
+
+.full-description {
+    width: 42.86%;
+    background-color: blue;
+    height: 1600px;
+    margin: $m;
+}
+
+// .in-bl{
+//     display: inline-block;
+// }
+.fl {
+    display: flex;
+}
+
+.fl-c {
+    flex-direction: column;
+}
+
+.fl-r-wr {
+    flex-wrap: wrap;
+}
+
+.fl-c-wr {
+    flex-wrap: wrap;
+}
