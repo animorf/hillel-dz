@@ -86,6 +86,7 @@ select {
 body {
   max-width: 1440px;
   margin: auto;
+  font-family: 'Ibarra Real Nova', serif;
 }
 
 main {
@@ -115,7 +116,25 @@ aside {
   margin: 0px 8px;
 }
 
-nav {
+.photo-preview .big-kboard-review {
+  text-align: center;
+}
+
+.photo-preview .big-kboard-review div {
+  height: 632px;
+}
+
+.photo-preview .big-kboard-review div picture {
+  margin: auto;
+}
+
+.photo-preview .big-kboard-review div picture img {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+}
+
+.nav {
   width: 10%;
   background-color: lightgreen;
   height: 400px;
@@ -123,15 +142,15 @@ nav {
   max-width: 40px;
 }
 
-nav .mini-k li {
+.nav .mini-k li {
   margin-bottom: 4px;
 }
 
-nav .mini-k li img {
+.nav .mini-k li img {
   border: solid 1px black;
 }
 
-nav .mini-k li img:hover {
+.nav .mini-k li img:hover {
   -webkit-box-shadow: 0px 0px 3px 4px #ffa34d;
   box-shadow: 0px 0px 3px 4px #ffa34d;
 }
@@ -147,9 +166,9 @@ nav .mini-k li img:hover {
 
 .big-kboard-review {
   width: 88%;
-  background-color: hotpink;
-  height: 400px;
-  margin: 0px 8px;
+  height: 652px;
+  margin: auto;
+  text-align: center;
 }
 
 .full-description {

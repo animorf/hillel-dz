@@ -5,6 +5,7 @@ $p: 8px;
 body {
     max-width: 1440px;
     margin: auto;
+    font-family: 'Ibarra Real Nova', serif;
 }
 
 main {
@@ -29,9 +30,23 @@ aside {
     top: 10px;
     left: 10px;
     margin: $m;
+    .big-kboard-review{
+        text-align: center;
+        div {
+            height: 632px;
+            picture{
+                margin: auto;
+                img{
+                    width: 100%;
+                    max-width: 680px;
+                    height: auto;
+                }
+            }
+        }
+    }
 }
 
-nav {
+.nav {
     width: 10%;
     background-color: lightgreen;
     height: 400px;
@@ -64,9 +79,9 @@ nav {
 
 .big-kboard-review {
     width: 88%;
-    background-color: hotpink;
-    height: 400px;
-    margin: $m;
+    height: 652px;
+    margin: auto;
+    text-align: center;
 }
 
 .full-description {
