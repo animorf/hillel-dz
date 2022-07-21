@@ -9,8 +9,8 @@
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -21,8 +21,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -41,8 +41,8 @@ body {
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -102,57 +102,82 @@ aside {
   height: 400px;
 }
 
+.nav-list {
+  width: 10%;
+  height: 400px;
+  margin: 0px 8px;
+  max-width: 40px;
+}
+
+.nav-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-list li {
+  margin-bottom: 4px;
+}
+
+.nav-list li:not(last-child) {
+  margin-bottom: 0px;
+}
+
+.nav-list img {
+  border: solid 1px black;
+}
+
+.nav-list img:hover {
+  -webkit-box-shadow: 0px 0px 3px 4px #ffa34d;
+  box-shadow: 0px 0px 3px 4px #ffa34d;
+}
+
+.big-kboard-review {
+  position: relative;
+  text-align: center;
+}
+
+.big-kboard-review div {
+  height: 632px;
+}
+
+.big-kboard-review div picture {
+  margin: auto;
+}
+
+.big-kboard-review div picture img {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+}
+
+.share {
+  width: 34px;
+  height: 34px;
+  background-color: white;
+  border: grey solid 1px;
+  border-radius: 25px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
 .photo-preview {
   position: -webkit-sticky;
   position: sticky;
   width: 57.14%;
   height: 42%;
-  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: 10px;
   left: 10px;
   margin: 0px 8px;
-}
-
-.photo-preview .big-kboard-review {
-  text-align: center;
-}
-
-.photo-preview .big-kboard-review div {
-  height: 632px;
-}
-
-.photo-preview .big-kboard-review div picture {
-  margin: auto;
-}
-
-.photo-preview .big-kboard-review div picture img {
-  width: 100%;
-  max-width: 680px;
-  height: auto;
-}
-
-.nav {
-  width: 10%;
-  background-color: lightgreen;
-  height: 400px;
-  margin: 0px 8px;
-  max-width: 40px;
-}
-
-.nav .mini-k li {
-  margin-bottom: 4px;
-}
-
-.nav .mini-k li img {
-  border: solid 1px black;
-}
-
-.nav .mini-k li img:hover {
-  -webkit-box-shadow: 0px 0px 3px 4px #ffa34d;
-  box-shadow: 0px 0px 3px 4px #ffa34d;
 }
 
 .mini-fs {
@@ -162,13 +187,6 @@ aside {
 
 .caps {
   text-transform: uppercase;
-}
-
-.big-kboard-review {
-  width: 88%;
-  height: 652px;
-  margin: auto;
-  text-align: center;
 }
 
 .full-description {

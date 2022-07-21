@@ -1,0 +1,19 @@
+.nav {
+    width: 10%;
+    background-color: lightgreen;
+    height: 400px;
+    margin: $m;
+    max-width: 40px;
+    .mini-k li {
+        margin-bottom: 4px;
+        img {
+            border: solid 1px black;
+
+            &:hover {
+                -webkit-box-shadow: 0px 0px 3px 4px #ffa34d;
+                -moz-box-shadow: 0px 0px 3px 4px #ffa34d;
+                box-shadow: 0px 0px 3px 4px #ffa34d;
+            }
+        }
+    }
+}

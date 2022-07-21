@@ -1,0 +1,26 @@
+.big-kboard-review{
+    position: relative;
+    text-align: center;
+    div {
+        height: 632px;
+        picture{
+            margin: auto;
+            img{
+                width: 100%;
+                max-width: 680px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.share{
+    width: 34px;
+    height: 34px;
+    background-color: white;  
+    border: grey solid 1px;
+    border-radius: 25px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
