@@ -1,0 +1,41 @@
+.feedback{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // &:first-child{
+    //     align-items: center;
+    // img{
+    //     height: 18px;
+    // }
+    // &::after{
+    //     // content: ">";
+    //     // margin-left: 4px;
+    //     content: ">";
+    //     transform: rotate(90deg);
+    //     margin-left: 8px;
+    //     color: grey;
+    // }
+    // }
+}
+
+
+
+.stars{
+    align-items: center;
+    img{
+        height: 18px;
+    }
+    &::after{
+        // content: ">";
+        // margin-left: 4px;
+        content: ">";
+        transform: rotate(90deg);
+        margin-left: 8px;
+        color: grey;
+    }
+}
+
+.ratings{
+    border-right: 1px solid grey;
+    padding-right: 22px;
+}

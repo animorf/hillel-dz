@@ -2,30 +2,18 @@
 @import "./base/vars";
 @import "./base/nullstyle";
 @import "./base/base";
+@import "./base/_typography.scss";
 
 //blocks
 @import "./blocks/nav-list";
 @import "./blocks/big-kboard-review";
 @import "./blocks/photo-preview";
-
-
-.mini-fs {
-    font-size: 8px;
-    font-weight: 600;
-}
-
-.caps {
-    text-transform: uppercase;
-}
+@import "./blocks/full-description";
+@import "./blocks/feedback";
 
 
 
-.full-description {
-    width: 42.86%;
-    background-color: blue;
-    height: 1600px;
-    margin: $m;
-}
+
 
 .fl {
     display: flex;

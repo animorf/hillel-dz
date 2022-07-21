@@ -57,11 +57,6 @@ img {
   display: block;
 }
 
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
-
 /* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
@@ -86,20 +81,42 @@ select {
 body {
   max-width: 1440px;
   margin: auto;
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
-  width: 87.5%;
+  width: 80%;
   margin: 0px 8px;
   padding: 8px;
-  background-color: grey;
 }
 
 aside {
-  width: 12.5%;
+  width: 20%;
   background-color: bisque;
   height: 400px;
+}
+
+section {
+  padding: 8px;
+}
+
+article {
+  border-bottom: 1px solid grey;
+}
+
+h1,
+.h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.fs-mini {
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.caps {
+  text-transform: uppercase;
 }
 
 .nav-list {
@@ -156,6 +173,10 @@ aside {
   height: auto;
 }
 
+.big-kboard-review p {
+  color: #565959;
+}
+
 .share {
   width: 34px;
   height: 34px;
@@ -170,7 +191,7 @@ aside {
 .photo-preview {
   position: -webkit-sticky;
   position: sticky;
-  width: 57.14%;
+  width: 62.14%;
   height: 42%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,20 +201,44 @@ aside {
   margin: 0px 8px;
 }
 
-.mini-fs {
-  font-size: 8px;
-  font-weight: 600;
-}
-
-.caps {
-  text-transform: uppercase;
-}
-
 .full-description {
-  width: 42.86%;
-  background-color: blue;
+  width: 37.86%;
   height: 1600px;
   margin: 0px 8px;
+  font-size: 14px;
+}
+
+.feedback {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.stars {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stars img {
+  height: 18px;
+}
+
+.stars::after {
+  content: ">";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 8px;
+  color: grey;
+}
+
+.ratings {
+  border-right: 1px solid grey;
+  padding-right: 22px;
 }
 
 .fl {

@@ -1,18 +1,25 @@
 body {
     max-width: 1440px;
     margin: auto;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: $ff;
 }
 
 main {
-    width: 87.5%;
+    width: 80%;
     margin: $m;
     padding: $p;
-    background-color: grey;
 }
 
 aside {
-    width: 12.5%;
+    width: 20%;
     background-color: bisque;
     height: 400px;
+}
+
+section{
+    padding: $p;
+}
+
+article{
+    border-bottom: 1px solid grey;
 }
