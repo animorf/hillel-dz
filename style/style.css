@@ -1,4 +1,9 @@
 @charset "UTF-8";
+table tr th, .item-details__points p span {
+  font-weight: 800;
+  color: black;
+}
+
 /*  Обнуление стилей by Stas Bagretsov */
 /* Указываем box sizing */
 *,
@@ -65,6 +70,11 @@ select {
   font: inherit;
 }
 
+button {
+  background: none;
+  cursor: pointer;
+}
+
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -102,6 +112,7 @@ section {
 
 article {
   border-bottom: 1px solid grey;
+  margin-bottom: 4px;
 }
 
 h1,
@@ -117,6 +128,23 @@ h1,
 
 .caps {
   text-transform: uppercase;
+}
+
+table {
+  margin-top: 12px;
+}
+
+table tr {
+  margin-bottom: 8px;
+  vertical-align: top;
+}
+
+table tr:last-child {
+  margin-bottom: 0px;
+}
+
+table tr th {
+  width: 25%;
 }
 
 .nav-list {
@@ -224,8 +252,12 @@ h1,
           align-items: center;
 }
 
-.stars img {
+.stars picture {
   height: 18px;
+}
+
+.stars img {
+  max-height: 100%;
 }
 
 .stars::after {
@@ -239,6 +271,86 @@ h1,
 .ratings {
   border-right: 1px solid grey;
   padding-right: 22px;
+}
+
+.am-choice {
+  margin-top: 4px;
+}
+
+.am-choice .ama {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: black;
+  padding: 4px 8px;
+}
+
+.am-choice .ama span {
+  color: white;
+}
+
+.am-choice .ama span + span {
+  color: orange;
+}
+
+.climate {
+  margin-top: 8px;
+  padding: 4px;
+}
+
+.climate a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.climate picture img {
+  max-width: 100%;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.climate span {
+  color: green;
+}
+
+.item-details {
+  text-align: left;
+}
+
+.item-details__points {
+  padding: 4px 0px;
+}
+
+.item-details__points p {
+  color: #555;
+}
+
+.item-details__points p span {
+  margin-left: 8px;
+}
+
+.item-details-point__row {
+  padding: 4px 0px;
+}
+
+.item-details-point__btn {
+  margin-right: 4px;
+  padding: 4px 8px;
+  border: 1px dashed #ccc;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.item-details-point__btn:hover {
+  color: black;
+}
+
+.item-details-point__btn:focus {
+  border: 1px solid orange;
+  background-color: antiquewhite;
+  color: black;
 }
 
 .fl {

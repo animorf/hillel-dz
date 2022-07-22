@@ -1,0 +1,16 @@
+.am-choice{
+    margin-top: 4px;;
+    .ama{
+        display: inline-block;
+        font-weight: 600;
+        font-size: 12px;
+        background-color: black;
+        padding: 4px 8px;
+        span{
+            color: white;
+        }
+        span + span{
+            color: orange;
+        }
+    }
+}

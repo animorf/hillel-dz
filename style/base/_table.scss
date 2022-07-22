@@ -1,0 +1,14 @@
+table{
+    margin-top: 12px;
+    tr{
+        margin-bottom: 8px;
+        vertical-align: top;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        th{
+            @extend %details-bold-text;
+            width: 25%;
+        }
+    }
+}

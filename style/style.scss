@@ -3,6 +3,7 @@
 @import "./base/nullstyle";
 @import "./base/base";
 @import "./base/_typography.scss";
+@import "./base/table";
 
 //blocks
 @import "./blocks/nav-list";
@@ -10,6 +11,9 @@
 @import "./blocks/photo-preview";
 @import "./blocks/full-description";
 @import "./blocks/feedback";
+@import "./blocks/am-choice";
+@import "./blocks/climate";
+@import "./blocks/item-details";
 
 
 
