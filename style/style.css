@@ -1,5 +1,5 @@
 @charset "UTF-8";
-table tr th, .item-details__points p span {
+table tr th, .item-details__points p span, .about--h3, .product--h2, .product-note span {
   font-weight: 800;
   color: black;
 }
@@ -102,8 +102,9 @@ main {
 
 aside {
   width: 20%;
-  background-color: bisque;
-  height: 400px;
+  text-align: center;
+  margin-top: 8px;
+  padding: 8px;
 }
 
 section {
@@ -113,6 +114,24 @@ section {
 article {
   border-bottom: 1px solid grey;
   margin-bottom: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #007185;
+}
+
+a:hover {
+  color: crimson;
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.price {
+  color: crimson;
 }
 
 h1,
@@ -351,6 +370,134 @@ table tr th {
   border: 1px solid orange;
   background-color: antiquewhite;
   color: black;
+}
+
+.about--h3 {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.about ul {
+  margin-bottom: 20px;
+}
+
+.about li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.product {
+  padding-bottom: 8px;
+}
+
+.product--h2 {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.product-info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.product-info-block__img {
+  width: 25%;
+  margin: 8px;
+}
+
+.product-info-block__img img {
+  max-width: 100%;
+}
+
+.product-info-block__box .stars picture {
+  margin-right: 12px;
+}
+
+.product-info-block__box .stars::after {
+  content: none;
+}
+
+.product-note {
+  margin-bottom: 24px;
+}
+
+.aside-deliver {
+  text-align: left;
+  padding: 16px 16px 0px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.aside-deliver button {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.aside-deliver .link {
+  margin-right: 12px;
+}
+
+.aside-deliver .link::before {
+  content: "";
+  position: relative;
+  top: 1px;
+  margin-right: 8px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../../images/icons/map-point.png);
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid grey;
+}
+
+.line + button {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.aside-deliver__btn {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.aside-deliver__btn:hover {
+  background-color: antiquewhite;
+}
+
+.aside-deliver__btn.--add {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: beige;
+  text-align: left;
+}
+
+.aside-deliver__btn.--add:hover {
+  background-color: inherit;
+}
+
+.aside-deliver__btn .--sell {
+  width: 50%;
+}
+
+.aside-sell {
+  width: 50%;
+  margin: 32px auto;
+}
+
+.aside-sell p {
+  font-size: 12px;
 }
 
 .fl {

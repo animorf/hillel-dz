@@ -1,0 +1,38 @@
+.product{
+    padding-bottom: 8px;
+    &--h2{
+        @extend %details-bold-text;
+        font-size: 20px;
+        margin-top: 8px;
+    }
+}
+
+.product-info-block{
+    display: flex;
+    margin-bottom: 24px;
+    &__img{
+        width: 25%;
+        margin: 8px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.product-info-block__box{
+    .stars{
+        picture{
+        margin-right: 12px;
+        }
+        &::after{
+            content: none;
+        }
+    }   
+}
+
+.product-note{
+    margin-bottom: 24px;
+    span{
+        @extend %details-bold-text;
+    }
+}
